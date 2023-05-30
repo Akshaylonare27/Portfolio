@@ -553,7 +553,7 @@ a:hover,a.active{
   }
   #bag{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     
   }
 /* Navbar */
@@ -615,7 +615,7 @@ color: black;
 
 #bag{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .myCheckBox:checked ~ ul{
   left: 0;
@@ -650,6 +650,24 @@ color: black;
   border-radius: 40%;
   height: 600px;
   width: 20%;
+}
+
+@media all and (max-width:950px) and (min-width:300px) {
+  .image>img{
+    border-radius: 40%;
+    height: 350px;
+    width: 20%;
+  }
+
+  #bag{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+    justify-content:space-around;
+    padding-left: 80px;
+    
+    
+    
+  }
 }
 
 #git-cal>div>img{
